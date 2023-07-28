@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { HiMenu } from "react-icons/hi";
 import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
     <div id="header">
       <div id="logo">
-        <a href="#"> ayomideOKE</a>
+        <a href="#"> mideBillions</a>
       </div>
       <ul className="nav-options">
         <li>
@@ -25,6 +25,9 @@ const Header = () => {
           <a href="#contact"> Contact</a>
         </li>
       </ul>
+      <div className="nav-menu">
+        <HiMenu />
+      </div>
     </div>
   );
 }

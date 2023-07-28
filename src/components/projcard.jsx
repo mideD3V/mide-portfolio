@@ -5,7 +5,10 @@ const Projcard = () => {
   return (
     <div className="card">
       <img src={Dodov} alt="" />
-      <div className="proj-desc">Porfolio for Hristiyan Dodov</div>
+      <div className="proj-desc">
+        <h3>Porfolio for Hristiyan Dodov</h3>
+      
+      <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
     </div>
   );
 }
