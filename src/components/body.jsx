@@ -3,13 +3,21 @@ import Header from "./header";
 
 import MideHero from "../asset/mid3v.png";
 
+//projects
 import ProjCard from "./projcard";
 import Dodov from "../asset/dodov.png";
+import myPort from "../asset/projects/portfolio.png";
+import ageCalc from "../asset/projects/age-calculator.png";
+import contactApp from "../asset/projects/contact-app.png";
+import Screened from "../asset/projects/screened.png";
 
-import myCV from '../asset/Ayomide - CV.pdf'
+import myCV from "../asset/Ayomide - CV.pdf";
 import "../App.css";
+import ContactForm from "./contactForm";
 
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdEmail, MdLocationPin } from "react-icons/md";
+import { BsTelephoneOutboundFill, BsInstagram } from "react-icons/bs";
 
 const body = () => {
   return (
@@ -20,7 +28,7 @@ const body = () => {
           <img src={MideHero} alt="" srcset="" />
         </span>
         <div className="hero--txt">
-          <h5>Hi, Welcome!</h5>
+          <h5>Hi, Welcome! My name is;</h5>
           <h1>Ayomide Oke</h1>
           <p>
             I'm a <b>FrontEnd Developer</b>
@@ -42,11 +50,72 @@ const body = () => {
           <a href="http://" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/ayobilli0ns"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTwitter />
+          </a>
+          <a
+            href="https://www.instagram.com/ayobilli0ns/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsInstagram />
           </a>
 
           <span></span>
+        </div>
+      </section>
+      {/* PROJECTS */}
+      <section id="projects">
+        <h1>PROJECTS</h1>
+        <p className="pro-t-des">
+          Here are some of my recently completed projects
+        </p>
+
+        <div className="proj-ctn">
+          <ProjCard
+            image={Screened}
+            className="card2"
+            title="SCREENED: A movie blogsite"
+            description="A movie blogsite for movie enthusiasts. Collaborated with a cross-functional team to develop this project."
+            tools="HTML, CSS, JavaScript, Django"
+            link="http://screened.up.railway.app"
+            link2="https://github.com/mideD3V/Screened-Movie-Blog"
+          />
+          <ProjCard
+            title="My personal porfolio"
+            image={myPort}
+            description="A portfolio website built from scratch to display my skills and qualifications."
+            tools="HTML, CSS, ReactJS"
+          />
+
+          <ProjCard
+            image={contactApp}
+            className="card2"
+            title="Contact App"
+            description="An app that can be used to add details of member to a list."
+            tools="HTML, CSS, and JavaScript"
+          />
+
+          <ProjCard image={ageCalc} />
+
+          <ProjCard />
+        </div>
+      </section>
+      {/* MY SKILLS */}
+      <section className="myskills">
+        <div className="skills">
+          <h1>Technical Skills</h1>
+          <div className="skills-ctn">
+            <span className="html skill--card"></span>
+            <span className="css skill--card"></span>
+            <span className="js skill--card"></span>
+            <span className="react skill--card"></span>
+            <span className="tailwind skill--card"></span>
+          </div>
         </div>
       </section>
 
@@ -57,12 +126,11 @@ const body = () => {
             <img src={MideHero} alt="" />
           </div>
           <div className="about--txt">
-            <h1>ABOUT ME</h1>
+            <h1>MY STORY</h1>
             <p>
               👋 Hi, I'm Ayomide Oke, a passionate and detail-oriented Frontend
               Developer with a drive for creating seamless and user-centric web
               experiences.
-              <br />
               <br />
               💡 I thrive on finding creative solutions to complex challenges
               and take pride in crafting visually engaging and responsive user
@@ -70,113 +138,19 @@ const body = () => {
               at Zuri Teams Inc. further deepened my skills and passion for the
               tech industry.
               <br />
-              <br />
               🌱 Beyond coding, I enjoy sharing my knowledge and empowering
               others through software training sessions. When not coding, you'll
               find me indulging in photography, playing musical instruments, or
               immersing myself in board games.
               <br />
-              <br />
               🤝 I'm always open to exciting projects, collaboration
               opportunities, and new connections in the tech community. Let's
               create meaningful and impactful solutions together!
               <br />
-              <br />
               Feel free to send me a message.
             </p>
-            <button>Contact me</button>
+            <button>CONTACT ME</button>
           </div>
-        </div>
-      </section>
-      {/* MY SKILLS */}
-      <section className="myskills">
-        <div className="skills">
-          <h2>Technical Skills</h2>
-          <div className="skills-ctn">
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-              target="_blank"
-              rel="noreferrer"
-              className="skill--card"
-            >
-              <h3>HTML</h3>
-            </a>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              target="_blank"
-              rel="noreferrer"
-              className="skill--card"
-            >
-              <h3>CSS</h3>
-            </a>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              target="_blank"
-              rel="noreferrer"
-              className="skill--card"
-            >
-              <h3>JavaScript</h3>
-            </a>
-
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started"
-              target="_blank"
-              rel="noreferrer"
-              className="skill--card"
-            >
-              <h3>ReactJS</h3>
-            </a>
-            <a
-              href="https://v2.tailwindcss.com/docs"
-              target="_blank"
-              rel="noreferrer"
-              className="skill--card"
-            >
-              <h3>TailwindCSS</h3>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* PROJECTS */}
-      <section id="projects">
-        <h1>PROJECTS</h1>
-        <p className="pro-t-des">Some of my recently completed projects</p>
-
-        <div className="proj-ctn">
-          <a
-            href="https://rasheedatj.github.io/Team-2-dodov/"
-            target="_blank"
-            rel="noreferrer"
-            className="project"
-          >
-            <ProjCard />
-          </a>
-          <a
-            href="https://whoismide.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="project"
-          >
-            <ProjCard />
-          </a>
-
-          <a
-            href="https://whoismide.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="project"
-          >
-            <ProjCard />
-          </a>
-          <a
-            href="https://whoismide.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="project"
-          >
-            <ProjCard />
-          </a>
         </div>
       </section>
 
@@ -185,56 +159,47 @@ const body = () => {
       <section id="contact">
         <h1>LET'S CONNECT</h1>
         <p>
-          Feel free to speak to me about your project. I will be happy to hear
-          from you
+          I will be happy to hear about your project and ideas. Feel free to get
+          in touch with me using the contact form. <br /> I welcome any
+          inquiries, feedback, or collaboration opportunities.
         </p>
-        <form action="" method="post">
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            name="fullname"
-            id="fullname"
-            placeholder="Enter your full name"
-          />
-
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email address"
-          />
-
-          <label htmlFor="name">Message</label>
-          <textarea name="message" id="" cols="30" rows="10">
-            Enter your message here
-          </textarea>
-
-          <button type="submit">SEND MESSAGE</button>
-        </form>
-
+        <ContactForm />
       </section>
       {/* FOOTER */}
       <section id="footer">
-        <div id="logo">
-          <a href="#"> ayomideOKE</a>
-        </div>
-
-
-        <div className="socials">
+        <dir>
+          <div id="logo" className="footer-logo">
+            <a href="#"> ayoBilli0ns</a>
+          </div>
+          <div className="footer-contact">
+            <p>
+              <MdEmail /> ayomideoke9@gmail.com
+            </p>
+            <p>
+              <BsTelephoneOutboundFill />
+              +2348162087291
+            </p>
+            <p>
+              <MdLocationPin /> Global
+            </p>
+          </div>
+        </dir>
+        <div className="footer-socials">
           <a href="https://www.linkedin.com/in/mid3/" className="icon">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/mide_dev" className="icon">
+          <a href="https://twitter.com/ayobilli0ns" className="icon">
             <FaTwitter />
           </a>
           <a href="https://github.com/mided3v/" className="icon">
             <FaGithub />
           </a>
+          <a href="https://www.instagram.com/ayobilli0ns/" className="icon">
+            <BsInstagram />
+          </a>
         </div>
-
-
-        
+        <div className="copyright"> Copyright @2023. All rights reserved</div>
+        <div className="credit">Designed and developed my mid3Billi0ns.</div>
       </section>
     </div>
   );
