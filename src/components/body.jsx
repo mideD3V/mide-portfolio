@@ -10,6 +10,7 @@ import myPort from "../asset/projects/portfolio.png";
 import ageCalc from "../asset/projects/age-calculator.png";
 import contactApp from "../asset/projects/contact-app.png";
 import Screened from "../asset/projects/screened.png";
+import toluApp from "../asset/projects/tolu-app.png";
 
 import myCV from "../asset/Ayomide - CV.pdf";
 import "../App.css";
@@ -90,6 +91,8 @@ const body = () => {
             image={myPort}
             description="A portfolio website built from scratch to display my skills and qualifications."
             tools="HTML, CSS, ReactJS"
+            link2=""
+            link=""
           />
 
           <ProjCard
@@ -98,11 +101,26 @@ const body = () => {
             title="Contact App"
             description="An app that can be used to add details of member to a list."
             tools="HTML, CSS, and JavaScript"
+            link2="https://github.com/mideD3V/contact-app"
+            link="https://my-contactapp.netlify.app/"
           />
 
-          <ProjCard image={ageCalc} />
+          <ProjCard
+            image={ageCalc}
+            title="Age calculator app"
+            description="An simple app that accepts users' details (birthday) and displays their exact current age (in years, months, and days.)"
+            link="https://my-agecalculatorapp.netlify.app"
+            link2="https://github.com/mideD3V/age-calculator-app-main"
+          />
 
-          <ProjCard />
+          <ProjCard
+            image={toluApp}
+            title="A portfolio app"
+            description="Design and Development of a portfolio site for a client."
+            tools="Figma, HTML, CSS, JavaScript"
+            link="https://icharlotte.netlify.app/"
+            link2="https://github.com/mideD3V/tolu-app"
+          />
         </div>
       </section>
       {/* MY SKILLS */}
@@ -132,16 +150,20 @@ const body = () => {
               Developer with a drive for creating seamless and user-centric web
               experiences.
               <br />
+              <br />
               💡 I thrive on finding creative solutions to complex challenges
               and take pride in crafting visually engaging and responsive user
               interfaces. Collaborating with talented teams during my internship
               at Zuri Teams Inc. further deepened my skills and passion for the
               tech industry.
               <br />
+              <br />
+
               🌱 Beyond coding, I enjoy sharing my knowledge and empowering
               others through software training sessions. When not coding, you'll
               find me indulging in photography, playing musical instruments, or
               immersing myself in board games.
+              <br />
               <br />
               🤝 I'm always open to exciting projects, collaboration
               opportunities, and new connections in the tech community. Let's
