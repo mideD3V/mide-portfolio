@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "./header";
-
+import { motion, easeInOut } from "framer-motion";
 import MideHero from "../asset/mid3v.png";
 
 //projects
 import ProjCard from "./projcard";
+import ProjCard2 from "./projcard2";
 import Dodov from "../asset/dodov.png";
 import myPort from "../asset/projects/portfolio.png";
 import ageCalc from "../asset/projects/age-calculator.png";
@@ -23,27 +24,47 @@ import { BsTelephoneOutboundFill, BsInstagram } from "react-icons/bs";
 const body = () => {
   return (
     <div className="body">
-      <Header />
       <section className="hero">
         <span className="heroimg">
           <img src={MideHero} alt="" srcset="" />
         </span>
         <div className="hero--txt">
           <h5>Hi, Welcome! My name is;</h5>
-          <h1>Ayomide Oke</h1>
-          <p>
+          <motion.h1
+            initial={{ x: -500, scale: 0.5 }}
+            animate={{ x: 0, scale: 1 }}
+            transition={{ duration: 2 }}
+          >
+            Ayomide Oke
+          </motion.h1>
+          <motion.p
+            initial={{ x: 500, scale: 0.5 }}
+            animate={{ x: 0, scale: 1 }}
+            transition={{ duration: 2 }}
+          >
             I'm a <b>FrontEnd Developer</b>
-          </p>
-          <div className="hero-btn">
+          </motion.p>
+          <motion.div
+            className="hero-btn"
+            initial={{ y: 500, scale: 0.2 }}
+            animate={{ y: 0, scale: 1 }}
+            transition={{ duration: 2 }}
+          >
             <a href={myCV} download id="downloadcv">
               Download CV
             </a>
             <a href="#contact">
               <button>HIRE ME</button>
             </a>
-          </div>
+          </motion.div>
         </div>
-        <div className="socials-ctn">
+
+        <motion.div
+          className="socials-ctn"
+          initial={{ y: 500, scale: 0.5 }}
+          animate={{ y: 0, scale: 1 }}
+          transition={{ duration: 4 }}
+        >
           <a href="http://" target="_blank" rel="noopener noreferrer">
             {" "}
             <FaLinkedin />
@@ -67,10 +88,23 @@ const body = () => {
           </a>
 
           <span></span>
-        </div>
+        </motion.div>
       </section>
+
       {/* PROJECTS */}
-      <section id="projects">
+      <motion.section id="projects"
+        initial={{
+          scale: 2,
+              rotate:45
+        }}
+        animate={{
+          scale: 1,
+          rotate:0
+        }}
+        transition={{
+          duration: 0.5,
+          ease:easeInOut
+      }}>
         <h1>PROJECTS</h1>
         <p className="pro-t-des">
           Here are some of my recently completed projects
@@ -86,7 +120,7 @@ const body = () => {
             link="http://screened.up.railway.app"
             link2="https://github.com/mideD3V/Screened-Movie-Blog"
           />
-          <ProjCard
+          <ProjCard2
             title="My personal porfolio"
             image={myPort}
             description="A portfolio website built from scratch to display my skills and qualifications."
@@ -105,7 +139,7 @@ const body = () => {
             link="https://my-contactapp.netlify.app/"
           />
 
-          <ProjCard
+          <ProjCard2
             image={ageCalc}
             title="Age calculator app"
             description="An simple app that accepts users' details (birthday) and displays their exact current age (in years, months, and days.)"
@@ -122,7 +156,10 @@ const body = () => {
             link2="https://github.com/mideD3V/tolu-app"
           />
         </div>
-      </section>
+      </motion.section>
+
+
+
       {/* MY SKILLS */}
       <section className="myskills">
         <div className="skills">
@@ -140,9 +177,6 @@ const body = () => {
       {/* ABOUT ME */}
       <section id="about">
         <div className="about--me">
-          <div className="about-img">
-            <img src={MideHero} alt="" />
-          </div>
           <div className="about--txt">
             <h1>MY STORY</h1>
             <p>
@@ -153,25 +187,24 @@ const body = () => {
               <br />
               💡 I thrive on finding creative solutions to complex challenges
               and take pride in crafting visually engaging and responsive user
-              interfaces. Collaborating with talented teams during my internship
-              at Zuri Teams Inc. further deepened my skills and passion for the
-              tech industry.
+              interfaces.
               <br />
               <br />
-
-              🌱 Beyond coding, I enjoy sharing my knowledge and empowering
-              others through software training sessions. When not coding, you'll
-              find me indulging in photography, playing musical instruments, or
-              immersing myself in board games.
+              🌱 When not coding, you'll find me indulging in photography,
+              playing musical instruments, or immersing myself in board games.
               <br />
               <br />
               🤝 I'm always open to exciting projects, collaboration
               opportunities, and new connections in the tech community. Let's
               create meaningful and impactful solutions together!
               <br />
+              <br />
               Feel free to send me a message.
             </p>
             <button>CONTACT ME</button>
+          </div>
+          <div className="about-img">
+            <img src={MideHero} alt="" />
           </div>
         </div>
       </section>
