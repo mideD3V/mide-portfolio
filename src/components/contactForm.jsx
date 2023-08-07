@@ -32,8 +32,16 @@ const ContactForm = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </label>
-      <label htmlFor="message">Message
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+
+      <label className="textlabel" htmlFor="message">
+        Message
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter your message here"
+        ></textarea>
       </label>
 
       <button type="submit">Submit</button>

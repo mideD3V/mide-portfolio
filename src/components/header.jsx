@@ -9,54 +9,77 @@ const Header = () => {
   const [headerBgColor, setHeaderBgColor] = useState("");
 
   const listenScrollEvent = (e) => {
-      e.preventDefault();
+    e.preventDefault();
 
     if (window.scrollY < 750) {
-      return  setHeaderBgColor("");
+      return setHeaderBgColor("");
     } else {
-      return  setHeaderBgColor("darkgreen");
+      return setHeaderBgColor("#001503");
     }
   };
 
-useEffect(() => {
-  window.addEventListener("scroll", listenScrollEvent);
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
 
-  return () => window.removeEventListener("scroll", listenScrollEvent);
-});
-  
-  
-  
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  });
+
+  useEffect(() => {
+    document.addEventListener("mousedown", () => {
+      setOpenMenu(false)
+    })
+  })
+
   return (
     <div id="header" style={{ backgroundColor: headerBgColor }}>
       <div id="logo">
         <a href="#"> ayoBilli0ns</a>
       </div>
-      <ul className="nav-options">
-        <li>
-          {/* <Link to="/">Home</Link> */}
+
+      <ul className={openMenu ? "open" : ""}>
+        <GrClose
+          className="close-nav"
+          onClick={() => {
+            setOpenMenu(!openMenu);
+          }}
+        />
+        <li
+          onClick={() => {
+            setOpenMenu(false);
+          }}
+        >
           <a href="#"> Home</a>
         </li>
-        <li>
+        <li
+          onClick={() => {
+            setOpenMenu(false);
+          }}
+        >
           <a href="#projects"> Projects</a>
         </li>
-        <li>
-          {" "}
+        <li
+          onClick={() => {
+            setOpenMenu(false);
+          }}
+        >
           <a href="#about"> About</a>
         </li>
-        {/* <li>Services</li> */}
 
-        <li>
+        <li
+          onClick={() => {
+            setOpenMenu(false);
+          }}
+        >
           <a href="#contact"> Contact</a>
         </li>
       </ul>
-      <div
-        className="nav-menu"
-        onClick={() => {
-          setOpenMenu(!openMenu);
-        }}
-      >
-        <HiMenu />
-        {/* <GrClose/> */}
+      <div className="nav-menu">
+        <HiMenu
+          className="hbmenu"
+          onClick={() => {
+            setOpenMenu(!openMenu);
+          }}
+        />
       </div>
     </div>
   );

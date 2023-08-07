@@ -104,7 +104,8 @@ const body = () => {
         transition={{
           duration: 0.5,
           ease:easeInOut
-      }}>
+        }}>
+        
         <h1>PROJECTS</h1>
         <p className="pro-t-des">
           Here are some of my recently completed projects
@@ -116,7 +117,7 @@ const body = () => {
             className="card2"
             title="SCREENED: A movie blogsite"
             description="A movie blogsite for movie enthusiasts. Collaborated with a cross-functional team to develop this project."
-            tools="HTML, CSS, JavaScript, Django"
+            tools="Tools: HTML, CSS, JavaScript, Django"
             link="http://screened.up.railway.app"
             link2="https://github.com/mideD3V/Screened-Movie-Blog"
           />
@@ -124,7 +125,7 @@ const body = () => {
             title="My personal porfolio"
             image={myPort}
             description="A portfolio website built from scratch to display my skills and qualifications."
-            tools="HTML, CSS, ReactJS"
+            tools="Tools: HTML, CSS, ReactJS"
             link2=""
             link=""
           />
@@ -134,7 +135,7 @@ const body = () => {
             className="card2"
             title="Contact App"
             description="An app that can be used to add details of member to a list."
-            tools="HTML, CSS, and JavaScript"
+            tools="Tools: HTML, CSS, and JavaScript"
             link2="https://github.com/mideD3V/contact-app"
             link="https://my-contactapp.netlify.app/"
           />
@@ -151,7 +152,7 @@ const body = () => {
             image={toluApp}
             title="A portfolio app"
             description="Design and Development of a portfolio site for a client."
-            tools="Figma, HTML, CSS, JavaScript"
+            tools="Tools: Figma, HTML, CSS, JavaScript"
             link="https://icharlotte.netlify.app/"
             link2="https://github.com/mideD3V/tolu-app"
           />
@@ -204,13 +205,13 @@ const body = () => {
             <button>CONTACT ME</button>
           </div>
           <div className="about-img">
+            <span></span>
             <img src={MideHero} alt="" />
           </div>
         </div>
       </section>
 
       {/* CONTACT */}
-
       <section id="contact">
         <h1>LET'S CONNECT</h1>
         <p>
@@ -220,6 +221,9 @@ const body = () => {
         </p>
         <ContactForm />
       </section>
+
+
+
       {/* FOOTER */}
       <section id="footer">
         <dir>

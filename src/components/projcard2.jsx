@@ -6,7 +6,7 @@ const Projcard = ({ image, title, description, tools, link, link2 }) => {
   return (
     <>
       {" "}
-      <div className="card">
+      <div className="card card2">
         <div className="proj-desc">
           <h3>{title}</h3>
           <p>{description}</p>
