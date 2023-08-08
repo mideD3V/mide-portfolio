@@ -6,7 +6,7 @@ import Header from "./components/header";
 import About from "./components/header";
 import Body from "./components/body";
 import Project from "./components/projcard";
-import Contact from "./components/contactForm";
+import {Contact} from "./components/contactForm";
 
 function App() {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./header";
 import { motion, easeInOut } from "framer-motion";
 import MideHero from "../asset/mid3v.png";
 
@@ -15,7 +14,7 @@ import toluApp from "../asset/projects/tolu-app.png";
 
 import myCV from "../asset/Ayomide - CV.pdf";
 import "../App.css";
-import ContactForm from "./contactForm";
+import {Contact} from "./contactForm";
 
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail, MdLocationPin } from "react-icons/md";
@@ -219,7 +218,7 @@ const body = () => {
           in touch with me using the contact form. <br /> I welcome any
           inquiries, feedback, or collaboration opportunities.
         </p>
-        <ContactForm />
+        <Contact />
       </section>
 
 
