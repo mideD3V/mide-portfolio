@@ -608,6 +608,7 @@ textarea {
 
   .hbmenu {
     color: #ffffff;
+    background-color: #fff;
     transform: scale(1.2);
     cursor: pointer;
   }

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HiMenu } from "react-icons/hi";
-import { GrClose } from "react-icons/gr";
-import { Link } from "react-router-dom";
+import { GrClose, GrMenu } from "react-icons/gr";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -74,7 +72,7 @@ const Header = () => {
         </li>
       </ul>
       <div className="nav-menu">
-        <HiMenu
+        <GrMenu
           className="hbmenu"
           onClick={() => {
             setOpenMenu(!openMenu);
