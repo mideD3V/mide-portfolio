@@ -31,11 +31,11 @@ const Header = () => {
   return (
     <div id="header" style={{ backgroundColor: headerBgColor }}>
       <div id="logo">
-        <a href="#"> ayoBilli0ns</a>
+        <a href="#"> mide</a>
       </div>
 
       <ul className={openMenu ? "open" : ""}>
-        <GrClose
+        <GrClose 
           className="close-nav"
           onClick={() => {
             setOpenMenu(!openMenu);

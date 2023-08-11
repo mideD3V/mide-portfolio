@@ -5,7 +5,6 @@ import MideHero from "../asset/mid3v.png";
 //projects
 import ProjCard from "./projcard";
 import ProjCard2 from "./projcard2";
-import Dodov from "../asset/dodov.png";
 import myPort from "../asset/projects/portfolio.png";
 import ageCalc from "../asset/projects/age-calculator.png";
 import contactApp from "../asset/projects/contact-app.png";
@@ -227,7 +226,7 @@ const body = () => {
       <section id="footer">
         <dir>
           <div id="logo" className="footer-logo">
-            <a href="#"> ayoBilli0ns</a>
+            <a href="#"> mide</a>
           </div>
           <div className="footer-contact">
             <p>
