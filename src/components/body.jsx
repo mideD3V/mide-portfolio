@@ -177,28 +177,30 @@ const body = () => {
         <div className="about--me">
           <div className="about--txt">
             <h1>MY STORY</h1>
-            <p>
-              👋 Hi, I'm Ayomide Oke, a passionate and detail-oriented Frontend
-              Developer with a drive for creating seamless and user-centric web
-              experiences.
-              <br />
-              <br />
-              💡 I thrive on finding creative solutions to complex challenges
-              and take pride in crafting visually engaging and responsive user
-              interfaces.
-              <br />
-              <br />
-              🌱 When not coding, you'll find me indulging in photography,
-              playing musical instruments, or immersing myself in board games.
-              <br />
-              <br />
-              🤝 I'm always open to exciting projects, collaboration
-              opportunities, and new connections in the tech community. Let's
-              create meaningful and impactful solutions together!
-              <br />
-              <br />
-              Feel free to send me a message.
-            </p>
+            <marquee behavior="slide" loop="2" scrollamount="20" direction="up">
+              <p>
+                👋 Hi, I'm Ayomide Oke, a passionate and detail-oriented
+                Frontend Developer with a drive for creating seamless and
+                user-centric web experiences.
+                <br />
+                <br />
+                💡 I thrive on finding creative solutions to complex challenges
+                and take pride in crafting visually engaging and responsive user
+                interfaces.
+                <br />
+                <br />
+                🌱 When not coding, you'll find me indulging in photography,
+                playing musical instruments, or immersing myself in board games.
+                <br />
+                <br />
+                🤝 I'm always open to exciting projects, collaboration
+                opportunities, and new connections in the tech community. Let's
+                create meaningful and impactful solutions together!
+                <br />
+                <br />
+                Feel free to send me a message.
+              </p>
+            </marquee>
             <button>CONTACT ME</button>
           </div>
           <div className="about-img">
@@ -213,9 +215,12 @@ const body = () => {
         <h1>LET'S CONNECT</h1>
         <p>
           I will be happy to hear about your project and ideas. Feel free to get
-          in touch with me using the contact form. <br /> I welcome any
+          in touch with me using the contact form. <br />
+          <br />
+          I welcome any
           inquiries, feedback, or collaboration opportunities.
         </p>
+        <br />
         <Contact />
       </section>
 
@@ -255,7 +260,11 @@ const body = () => {
 
         <div className="credit">
           Designed and developed my{" "}
-          <a href="https://twitter.com/ayobilli0ns" target="_blank" > mid3Billi0ns</a>.
+          <a href="https://twitter.com/ayobilli0ns" target="_blank">
+            {" "}
+            mid3Billi0ns
+          </a>
+          .
         </div>
       </section>
       <section id="copyright" className="copyright">
