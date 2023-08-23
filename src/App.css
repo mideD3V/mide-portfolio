@@ -75,7 +75,7 @@ ul li {
   display: none;
 }
 
-.close-nav{
+.close-navx{
   display: none;
 }
 .hero {
@@ -596,7 +596,7 @@ textarea {
 
   .close-navx {
     display: flex;
-    transform: scale(1.2);
+    transform: scale(1.35);
     right: 0;
     color: #fff;
     transform: scale(1.5);
