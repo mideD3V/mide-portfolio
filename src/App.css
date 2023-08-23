@@ -497,7 +497,7 @@ form label {
 }
 #send-btn {
   background-color: #fff;
-  padding: 15px 0;
+  padding: 16px 0;
   color: #073201;
   font-size: 18px;
   margin-top: 1rem;
@@ -798,7 +798,7 @@ textarea {
     padding: 0%;
     margin: 6rem 1rem 0rem 0rem;
     min-width: 90%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   form {
