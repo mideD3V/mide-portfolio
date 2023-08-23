@@ -90,20 +90,21 @@ const body = () => {
       </section>
 
       {/* PROJECTS */}
-      <motion.section id="projects"
+      <motion.section
+        id="projects"
         initial={{
           scale: 2,
-              rotate:45
+          rotate: 45,
         }}
         animate={{
           scale: 1,
-          rotate:0
+          rotate: 0,
         }}
         transition={{
           duration: 0.5,
-          ease:easeInOut
-        }}>
-        
+          ease: easeInOut,
+        }}
+      >
         <h1>PROJECTS</h1>
         <p className="pro-t-des">
           Here are some of my recently completed projects
@@ -156,8 +157,6 @@ const body = () => {
           />
         </div>
       </motion.section>
-
-
 
       {/* MY SKILLS */}
       <section className="myskills">
@@ -220,8 +219,6 @@ const body = () => {
         <Contact />
       </section>
 
-
-
       {/* FOOTER */}
       <section id="footer">
         <dir>
@@ -255,8 +252,15 @@ const body = () => {
             <BsInstagram />
           </a>
         </div>
-        <div className="copyright"> Copyright @2023. All rights reserved</div>
-        <div className="credit">Designed and developed my mid3Billi0ns.</div>
+
+        <div className="credit">
+          Designed and developed my{" "}
+          <a href="https://twitter.com/ayobilli0ns" target="_blank" > mid3Billi0ns</a>.
+        </div>
+      </section>
+      <section id="copyright" className="copyright">
+        {" "}
+        Copyright @2023. All rights reserved
       </section>
     </div>
   );

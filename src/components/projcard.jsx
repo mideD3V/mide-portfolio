@@ -16,31 +16,13 @@ const Projcard = ({ image, title, description, tools, link, link2 }) => {
             <a href={link} target="_blank" rel="noopener noreferrer">
               View Site
             </a>
+
             <a href={link2} target="_blank" rel="noopener noreferrer">
               View Code
             </a>
           </div>
         </div>
       </div>
-
-      
-      {/* <div className="card card2">
-        <img src={image} alt="" />
-
-        <div className="proj-desc">
-          <h3>{title}</h3>
-          <p>{description}</p>
-          <h5>{tools}</h5>
-          <div className="card-btn">
-            <a href={link} target="_blank" rel="noopener noreferrer">
-              View Site
-            </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
-              View Code
-            </a>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };

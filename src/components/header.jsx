@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GrClose, GrMenu } from "react-icons/gr";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -35,8 +35,8 @@ const Header = () => {
       </div>
 
       <ul className={openMenu ? "open" : ""}>
-        <GrClose 
-          className="close-nav"
+        <AiOutlineClose
+          className="close-navx"
           onClick={() => {
             setOpenMenu(!openMenu);
           }}
@@ -72,7 +72,7 @@ const Header = () => {
         </li>
       </ul>
       <div className="nav-menu">
-        <GrMenu
+        <AiOutlineMenu
           className="hbmenu"
           onClick={() => {
             setOpenMenu(!openMenu);
