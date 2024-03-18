@@ -1,6 +1,12 @@
 # My Portfolio
-My name is Ayomide Oke and I am a ## Frontend Web Developer
 
+Hi, I'm Ayomide Oke, a passionate and detail-oriented Frontend Developer with a drive for creating seamless and user-centric web experiences.
+
+💡 I thrive on finding creative solutions to complex challenges and take pride in crafting visually engaging and responsive user interfaces.
+
+🌱 When not coding, you'll find me indulging in photography, playing musical instruments, or immersing myself in board games.
+
+🤝 I'm always open to exciting projects, collaboration opportunities, and new connections in the tech community. Let's create meaningful and impactful solutions together!
 
 ### Technologies used
 - React
@@ -8,19 +14,4 @@ My name is Ayomide Oke and I am a ## Frontend Web Developer
 - Functions
 - Props
 - React hooks
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
